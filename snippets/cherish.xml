@@ -1,39 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-  <remote name="ten"
+  <remote name="eleven"
           fetch="https://github.com/CherishOS"
-          revision="ten" />
+          revision="eleven" />
 
   <remote name="CherishOS-Devices"
           fetch="https://github.com/CherishOS-Devices"
-          revision="ten" />
+          revision="eleven" />
 
-  <remote name="ten-gitlab"
+  <remote name="eleven-gitlab"
           fetch="https://gitlab.com/CherishOS"
-          revision="ten" />
+          revision="eleven" />
 
   <remote name="gitlab"
           fetch="https://gitlab.com" />
+		  
+  <!-- External repos -->
+  <project path="external/selinux" name="android_external_selinux" remote="eleven" />
+  
+  <!-- Hardware repos -->
+  <project path="hardware/cherish/interfaces" name="android_hardware_cherish_interfaces" remote="eleven" />
+  <project path="hardware/interfaces" name="android_hardware_interfaces" remote="eleven" />
+  <project path="hardware/libhardware"  name="android_hardware_libhardware"  remote="eleven" />
+  <project path="hardware/libhardware_legacy"  name="android_hardware_libhardware_legacy"  remote="eleven" />
+  <project path="hardware/qcom-caf/msm8996/display" name="android_hardware_qcom_display" groups="pdk-qcom,qcom,qcom_display" revision="eleven-caf-msm8996" remote="eleven" />
+  <project path="hardware/qcom-caf/msm8998/display" name="android_hardware_qcom_display" groups="pdk-qcom,qcom,qcom_display" revision="eleven-caf-msm8998" remote="eleven" />
+  <project path="hardware/qcom-caf/sdm845/display" name="android_hardware_qcom_display" groups="pdk-qcom,qcom,qcom_display" revision="eleven-caf-sdm845" remote="eleven" />
+  <project path="hardware/qcom-caf/sm8150/display" name="android_hardware_qcom_display" groups="pdk-qcom,qcom,qcom_display" revision="eleven-caf-sm8150" remote="eleven" />
+  <project path="hardware/qcom-caf/sm8250/display" name="android_hardware_qcom_display" groups="pdk-qcom,qcom,qcom_display" revision="eleven-caf-sm8250" remote="eleven" />
+
 
   <!-- CodeAurora additions -->
-  <project path="device/qcom/sepolicy" name="android_device_qcom_sepolicy" remote="ten" />
-  <project path="device/qcom/sepolicy-legacy" name="android_device_qcom_sepolicy-legacy" remote="ten" />
-  <project path="device/qcom/sepolicy-legacy-um" name="android_device_qcom_sepolicy-legacy-um" remote="ten" />
+  <project path="device/qcom/sepolicy" name="android_device_qcom_sepolicy" remote="eleven" />
+  <project path="device/qcom/sepolicy-legacy" name="android_device_qcom_sepolicy-legacy" remote="eleven" />
+  <project path="device/qcom/sepolicy-legacy-um" name="android_device_qcom_sepolicy-legacy-um" remote="eleven" />
 
   <!-- Framework repos -->
-  <project path="frameworks/av" name="android_frameworks_av" remote="ten" />
-  <project path="frameworks/base" name="android_frameworks_base" remote="ten" />
-  <project path="frameworks/native" name="android_frameworks_native" remote="ten" />
-  <project path="frameworks/opt/net/ims" name="android_frameworks_opt_net_ims" remote="ten" />
-  <project path="frameworks/opt/net/wifi" name="android_frameworks_opt_net_wifi" remote="ten" />
-  <project path="frameworks/opt/slimrecent" name="android_frameworks_opt_slimrecents" remote="ten" />
-  <project path="frameworks/opt/telephony" name="android_frameworks_opt_telephony" remote="ten" />
+  <project path="frameworks/av" name="android_frameworks_av" remote="eleven" />
+  <project path="frameworks/base" name="android_frameworks_base" remote="eleven" />
+  <project path="frameworks/native" name="android_frameworks_native" remote="eleven" />
 
   <!-- General repos -->
-  <project path="art" name="android_art" remote="ten" />
-  <project path="bionic" name="android_bionic" remote="ten" />
-  <project path="build/make" name="android_build_make" remote="ten">
+  <project path="art" name="android_art" remote="eleven" />
+  <project path="bionic" name="android_bionic" remote="eleven" />
+  <project path="build/make" name="android_build" remote="eleven">
     <copyfile src="core/root.mk" dest="Makefile" />
     <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
     <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
@@ -42,66 +53,24 @@
     <linkfile src="target" dest="build/target" />
     <linkfile src="tools" dest="build/tools" />
   </project>
-  <project path="build/soong" name="android_build_soong" remote="ten" >
+  <project path="build/soong" name="android_build_soong" remote="eleven" >
     <linkfile src="root.bp" dest="Android.bp" />
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
-  <project path="bootable/recovery" name="android_bootable_recovery" remote="ten" />
-  <project path="device/cherish/sepolicy" name="android_device_cherish_sepolicy" remote="ten" />
-  <project path="device/mediatek/sepolicy" name="android_device_mediatek_sepolicy" remote="ten" />
-  <project path="manifest" name="android_manifest" remote="ten" />
-  <project path="platform_testing" name="android_platform_testing" remote="ten" />
-  <project path="vendor/cherish" name="android_vendor_cherish" remote="ten" />
-  <project path="vendor/pixelstyle" name="android_vendor_pixelstyle" remote="ten" />
-
-  <!-- Hardware repos -->
-  <project path="hardware/cherish/interfaces" name="android_hardware_cherish_interfaces" remote="ten" />
-  <project path="hardware/interfaces" name="android_hardware_interfaces" remote="ten" />
+  <project path="bootable/recovery" name="android_bootable_recovery" remote="eleven" />
+  <project path="device/cherish/sepolicy" name="android_device_cherish_sepolicy" remote="eleven" />
+  <project path="device/mediatek/sepolicy" name="android_device_mediatek_sepolicy" remote="eleven" />
+  <project path="manifest" name="android_manifest" remote="eleven" />
+  <project path="vendor/cherish" name="android_vendor_cherish" remote="eleven" />
 
   <!-- Packages repos -->
-  <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="ten" />
-  <project path="packages/apps/OmniStyle" name="android_packages_apps_OmniStyle" remote="ten" />
-  <project path="packages/apps/Updates" name="android_packages_apps_Updates" remote="ten" />
-  <project path="packages/providers/DownloadProvider" name="android_packages_providers_DownloadProvider" remote="ten" />
-  <project path="packages/apps/Bluetooth" name="android_packages_apps_Bluetooth" remote="ten" />
-  <project path="packages/providers/MediaProvider" name="android_packages_providers_MediaProvider" remote="ten" />
-  <project path="packages/services/BuiltInPrintService" name="android_packages_services_BuiltInPrintService" remote="ten" />
-  <project path="packages/apps/PotatoPlugins" name="android_packages_apps_PotatoPlugins" remote="ten" />
-  <project path="packages/services/Telecomm" name="android_packages_services_Telecomm" remote="ten" />
-  <project path="packages/services/Telephony" name="android_packages_services_Telephony" remote="ten" />
-  <project path="packages/apps/Cherish" name="android_packages_apps_Cherish" remote="ten" />
-  
-  <!-- Basic packages -->
-  <project path="packages/apps/Contacts" name="android_packages_apps_Contacts" remote="ten" />
-  <project path="packages/apps/Dialer" name="android_packages_apps_Dialer" remote="ten" />
-  <project path="packages/apps/Jelly" name="android_packages_apps_Jelly" remote="ten"/>
-  <project path="packages/apps/Gallery2" name="android_packages_apps_Gallery2" remote="ten"/>
-  <project path="packages/apps/Messaging" name="android_packages_apps_Messaging" remote="ten"/>
-  <project path="packages/inputmethods/LatinIME" name="android_packages_inputmethods_LatinIME" remote="ten"/>
-  
-  <!-- Vendor External -->
-  <project path="vendor/checkra1n" name="android_vendor_checkra1n" remote="ten" />
-  <project path="vendor/qcom/opensource/commonsys/bluetooth_ext" name="android_vendor_qcom_opensource_bluetooth_ext" remote="ten" />
-  <project path="vendor/qcom/opensource/commonsys/packages/apps/Bluetooth" name="android_vendor_qcom_opensource_commonsys_packages_apps_Bluetooth" remote="ten" />
-  <project path="vendor/qcom/opensource/commonsys/system/bt" name="android_vendor_qcom_opensource_system_bt" remote="ten" />  
+  <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="eleven" />
   
   <!-- External repos -->
-  <project path="external/arm-optimized-routines" name="android_external_arm-optimized-routines" remote="ten" />
-  <project path="external/tinycompress" name="android_external_tinycompress" remote="ten" />
-  <project path="external/asus/stitchimage" name="android_external_asus_stitchimage" remote="ten" />
-  <project path="external/airbnb-lottie" name="android_external_airbnb-lottie" remote="ten" />
-  <project path="external/motorola/faceunlock" name="android_external_motorola_faceunlock" remote="ten-gitlab" />
-  <project path="external/pulse" name="android_external_pulse" remote="ten" />
+  <project path="external/tinycompress" name="android_external_tinycompress" remote="eleven" />
 
   <!-- System Repos -->
-  <project path="system/bt" name="android_system_bt" remote="ten" />
-  <project path="system/core" name="android_system_core" remote="ten" />
-  <project path="system/netd" name="android_system_netd" remote="ten" />
-  <project path="system/sepolicy" name="android_system_sepolicy" remote="ten" />
-  <project path="system/vold" name="android_system_vold" remote="ten" />
-  <project path="system/update_engine" name="android_system_update_engine" remote="ten" />
-  
-  <!-- Clang 12 -->
-  <project path="prebuilts/clang/host/linux-x86/clang-12" name="android_prebuilts_clang_host_linux-x86_clang-12" remote="ten" clone-depth="1" />
+  <project path="system/bt" name="android_system_bt" remote="eleven" />
+  <project path="system/core" name="android_system_core" remote="eleven" />
 
 </manifest>
