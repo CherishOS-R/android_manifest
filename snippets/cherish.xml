@@ -95,5 +95,8 @@
   <!-- System Repos -->
   <project path="system/bt" name="android_system_bt" remote="eleven" />
   <project path="system/core" name="android_system_core" remote="eleven" />
+	
+  <!-- Prebuilts -->
+  <project path="prebuilts/abi-dumps/vndk" name="android_prebuilts_abi-dumps_vndk" remote="cherish" clone-depth="1" />
 
 </manifest>
