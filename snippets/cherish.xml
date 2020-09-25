@@ -5,10 +5,6 @@
           fetch="https://github.com/CherishOS-R"
           revision="eleven" />
 
-  <remote name="CherishOS-Devices"
-          fetch="https://github.com/CherishOS-Devices"
-          revision="eleven" />
-
   <remote name="eleven-gitlab"
           fetch="https://gitlab.com/CherishOS"
           revision="eleven" />
