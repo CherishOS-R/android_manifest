@@ -96,8 +96,16 @@
   <project name="android_system_sepolicy" path="system/sepolicy" remote="eleven" />
   <project path="system/bt" name="android_system_bt" remote="eleven" />
   <project path="system/core" name="android_system_core" remote="eleven" />
+  <project path="system/tools/mkbootimg" name="android_system_tools_mkbootimg" remote="eleven" />
 	
   <!-- Prebuilts -->
-  <project path="prebuilts/abi-dumps/vndk" name="android_prebuilts_abi-dumps_vndk" remote="cherish" clone-depth="1" />
+  <project path="prebuilts/abi-dumps/vndk" name="android_prebuilts_abi-dumps_vndk" remote="eleven" clone-depth="1" />
+
+  <!--Vendor -->
+  <project path="vendor/qcom/opensource/cryptfs_hw" name="android_vendor_qcom_opensource_cryptfs_hw" remote="eleven" />
+  <project path="vendor/qcom/opensource/commonsys/bluetooth_ext" name="android_vendor_qcom_opensource_bluetooth_ext" remote="eleven" />
+  <project path="vendor/qcom/opensource/commonsys/packages/apps/Bluetooth" name="android_vendor_qcom_opensource_packages_apps_Bluetooth" remote="eleven" />
+  <project path="vendor/qcom/opensource/commonsys/system/bt" name="android_vendor_qcom_opensource_system_bt" remote="eleven" />
+  <project path="vendor/qcom/opensource/power" name="android_vendor_qcom_opensource_power" remote="eleven" />
 
 </manifest>
