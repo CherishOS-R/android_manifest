@@ -20,6 +20,7 @@
   <project path="hardware/interfaces" name="android_hardware_interfaces" remote="eleven" />
   <project path="hardware/libhardware"  name="android_hardware_libhardware"  remote="eleven" />
   <project path="hardware/libhardware_legacy"  name="android_hardware_libhardware_legacy"  remote="eleven" />
+  <project path="hardware/qcom-caf/wlan" name="android_hardware_qcom_wlan" groups="pdk-qcom,qcom,qcom_display" revision="eleven-caf" remote="eleven" />
   <project path="hardware/qcom-caf/msm8996/display" name="android_hardware_qcom_display" groups="pdk-qcom,qcom,qcom_display" revision="eleven-caf-msm8996" remote="eleven" />
   <project path="hardware/qcom-caf/msm8998/display" name="android_hardware_qcom_display" groups="pdk-qcom,qcom,qcom_display" revision="eleven-caf-msm8998" remote="eleven" />
   <project path="hardware/qcom-caf/sdm845/display" name="android_hardware_qcom_display" groups="pdk-qcom,qcom,qcom_display" revision="eleven-caf-sdm845" remote="eleven" />
