@@ -113,5 +113,6 @@
   <project path="vendor/qcom/opensource/commonsys/system/bt" name="android_vendor_qcom_opensource_system_bt" remote="eleven" />
   <project path="vendor/qcom/opensource/power" name="android_vendor_qcom_opensource_power" remote="eleven" />
   <project path="vendor/qcom/opensource/interfaces" name="android_vendor_qcom_opensource_interfaces" remote="eleven" />
+  <project path="vendor/themes" name="android_vendor_themes" remote="eleven" />
 
 </manifest>
