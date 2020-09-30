@@ -88,6 +88,7 @@
   <project path="vendor/cherish" name="android_vendor_cherish" remote="eleven" />
 
   <!-- Packages repos -->
+  <project path="packages/apps/CherishSettings" name="android_packages_apps_Cherish" remote="eleven" />
   <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="eleven" />
   <project path="packages/apps/Launcher3" name="android_packages_apps_Launcher3" remote="eleven" />
   <project path="packages/apps/ThemePicker" name="android_packages_apps_ThemePicker" remote="eleven" />
