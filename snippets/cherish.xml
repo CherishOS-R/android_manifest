@@ -114,6 +114,9 @@
   <!-- Prebuilts -->
   <project path="prebuilts/abi-dumps/vndk" name="android_prebuilts_abi-dumps_vndk" remote="eleven" clone-depth="1" />
 
+  <!-- Tools -->
+  <project path="tools/metalava" name="android_tools_metalava" remote="eleven" />
+
   <!--Vendor -->
   <project path="vendor/google/gms" name="vendor_google_gms" remote="eleven-gitlab" revision="eleven" />
   <project path="vendor/google/pixel" name="vendor_google_pixel" remote="eleven-gitlab" revision="eleven" />
