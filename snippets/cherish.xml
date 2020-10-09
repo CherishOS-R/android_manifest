@@ -68,6 +68,7 @@
   <project path="frameworks/av" name="android_frameworks_av" remote="eleven" />
   <project path="frameworks/base" name="android_frameworks_base" remote="eleven" />
   <project path="frameworks/native" name="android_frameworks_native" remote="eleven" />
+  <project path="frameworks/opt/telephony" name="android_frameworks_opt_telephony" remote="eleven" />
 
   <!-- General repos -->
   <project path="art" name="android_art" remote="eleven" />
