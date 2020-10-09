@@ -111,6 +111,7 @@
   <project path="system/bt" name="android_system_bt" remote="eleven" />
   <project path="system/core" name="android_system_core" remote="eleven" />
   <project path="system/tools/mkbootimg" name="android_system_tools_mkbootimg" remote="eleven" />
+  <project path="system/vold" name="android_system_vold" remote="eleven" />
 	
   <!-- Prebuilts -->
   <project path="prebuilts/abi-dumps/vndk" name="android_prebuilts_abi-dumps_vndk" remote="eleven" clone-depth="1" />
