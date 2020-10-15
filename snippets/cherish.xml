@@ -61,8 +61,8 @@
 
   <!-- CodeAurora additions -->
   <project path="device/qcom/sepolicy" name="android_device_qcom_sepolicy" remote="eleven" />
-  <project path="device/qcom/sepolicy-legacy" name="android_device_qcom_sepolicy" revision="eleven-legacy" remote="eleven" />
   <project path="device/qcom/sepolicy-legacy-um" name="android_device_qcom_sepolicy" revision="eleven-legacy-um" remote="eleven" />
+  <project path="device/qcom/sepolicy_vndr" name="android_device_qcom_sepolicy_vndr" remote="eleven" />
 
   <!-- Framework repos -->
   <project path="frameworks/av" name="android_frameworks_av" remote="eleven" />
