@@ -113,6 +113,7 @@
   <project path="system/core" name="android_system_core" remote="eleven" />
   <project path="system/update_engine" name="android_system_update_engine" remote="eleven" />
   <project path="system/tools/mkbootimg" name="android_system_tools_mkbootimg" remote="eleven" />
+  <project path="system/incremental_delivery" name="android_system_incremental_delivery" remote="eleven" />
   <project path="system/vold" name="android_system_vold" remote="eleven" />
 	
   <!-- Prebuilts -->
