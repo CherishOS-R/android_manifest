@@ -100,6 +100,8 @@
   <project path="packages/apps/ThemePicker" name="android_packages_apps_ThemePicker" remote="eleven" />
   
   <!-- External repos -->
+  <project path="external/guice" name="android_external_guice" remote="eleven" />
+  <project path="external/json-c" name="android_external_json-c" remote="eleven" />
   <project path="external/libcxx" name="android_external_libcxx" remote="eleven" />
   <project path="external/motorola/faceunlock" name="android_external_motorola_faceunlock" remote="eleven-gitlab" />
   <project path="external/tinycompress" name="android_external_tinycompress" remote="eleven" />
