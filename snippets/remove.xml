@@ -75,6 +75,7 @@
   <remove-project name="platform/hardware/qcom/keymaster" />
   <remove-project name="platform/hardware/qcom/media" />
   <remove-project name="platform/hardware/qcom/power" />
+  <remove-project name="platform/hardware/qcom/wlan" />
 
   <!-- General repos -->
    <remove-project name="platform/art" />
