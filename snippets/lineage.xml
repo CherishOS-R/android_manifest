@@ -10,7 +10,7 @@
           revision="11" />
 		  
   <!-- Custom additions -->
-  <project path="prebuilts/tools-custom" name="android_prebuilts_tools-lineage" remote="lineage" clone-depth="1" />
+  <project path="prebuilts/tools-cherish" name="android_prebuilts_tools-lineage" remote="lineage" clone-depth="1" />
 
   <!-- External -->
   <project path="external/ant-wireless/ant_native" name="android_external_ant-wireless_ant_native" remote="lineage" />
